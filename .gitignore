@@ -1,0 +1,7 @@
+/Main/Library
+/Main/Temp
+/Main/ProjectSettings
+/Main/*.vsconfig
+/Main/Logs/*.log
+/Main/UserSettings
+/Main/*.sln
