@@ -10,20 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: Prefabs
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: Prefabs
   m_Data:
     m_SerializedData: []
-  m_GUID: 411a291d00bac1a42a92ee9b9e3b1288
-  m_SerializeEntries:
-  - m_GUID: 9759b13077017674fa425fb5e68129be
-    m_Address: Assets/ArtAssets/Prefabs/LOLImage.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_GUID: 445be631d85cdc24ab2df40115de6b30
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a876e4f34062e3479ddf3f61a543dc4, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: b6bea1ea2fd7254448822f2b11c86fc2, type: 2}
-    - {fileID: 11400000, guid: ba8adfad3f95b6440b266f2740cfea7a, type: 2}
+    - {fileID: 11400000, guid: 0b2a1d5802d67ca4f925a1a7fbdc88af, type: 2}
+    - {fileID: 11400000, guid: 5e770c529667fca4fbf76266fbbdfacb, type: 2}
