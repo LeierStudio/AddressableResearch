@@ -2,7 +2,6 @@
 /Main/Temp
 /Main/*.vsconfig
 /Main/Logs/*.log
-/Main/UserSettings
 /Main/*.sln
 /Main/.vs/Main/v16/*.suo
 /Main/*.csproj
