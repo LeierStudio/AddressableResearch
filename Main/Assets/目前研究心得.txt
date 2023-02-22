@@ -1,0 +1,21 @@
+===================== [注意事項] =====================
+
+以下 Memory 統一是指使用 Addressables 後產生的 Memory。
+
+===================== [載入相關] =====================
+
+把 Asset 異步載入到 Memory，並 Instantiate 出實體：
+Addressables.InstantiateAsync()
+
+把 Asset 異步載入到 Memory：
+Addressables.LoadAssetAsync()
+
+===================== [釋放相關] =====================
+
+釋放此物件 Memory：
+ReleaseInstance(GameObject instance)
+
+釋放異步操作處理器 Memory：
+Addressables.Release(AsyncOperationHandle handle)
+
+======================================================
