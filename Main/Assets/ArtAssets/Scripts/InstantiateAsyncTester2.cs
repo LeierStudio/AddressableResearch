@@ -1,35 +1,42 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-/// <summary> ²§³¡¥[¸ü«á¹ê¨Ò¤Æ </summary>
+/// <summary> ç•°éƒ¨åŠ è¼‰å¾Œå¯¦ä¾‹åŒ– </summary>
 public class InstantiateAsyncTester2 : MonoBehaviour
 {
-    /// <summary> ¥Ø¼Ğ </summary>
+    /// <summary> ç›®æ¨™ </summary>
     [SerializeField] AssetReferenceGameObject Target;
 
-    /// <summary> ¥Ø¼Ğª«¥ó (Inspector ¹wÄı¥Î) </summary>
-    [SerializeField] GameObject _targetObj;
+    /// <summary> ç›®æ¨™ç‰©ä»¶ </summary>
+    GameObject _targetObj;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Addressables.InstantiateAsync(Target).Completed += OnLoad;
+            Addressables.InstantiateAsync(Target).Completed += OnLoadFinished;
         }
+        // éŒ¯èª¤
         if (Input.GetKeyDown(KeyCode.S))
         {
+            // ç´”åˆªç‰©ä»¶ï¼ŒAddressable ä¸æœƒé‡‹æ”¾ã€‚
             Destroy(_targetObj);
         }
+        // æ­£ç¢º
         if (Input.GetKeyDown(KeyCode.D))
         {
             Destroy(_targetObj);
-            // ¥i¥HÄÀ©ñ Addressable ¸ê·½¡C
+            // é‡‹æ”¾æ­¤ GameObject ç›¸é—œçš„ Addressableã€‚
             Addressables.ReleaseInstance(_targetObj);
         }
     }
 
-    void OnLoad(AsyncOperationHandle<GameObject> obj)
+    /// <summary>
+    /// [äº‹ä»¶] è¼‰å…¥å®Œæˆ
+    /// </summary>
+    /// <param name="obj">ç‰©ä»¶</param>
+    void OnLoadFinished(AsyncOperationHandle<GameObject> obj)
     {
         _targetObj = obj.Result;
     }

@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 445be631d85cdc24ab2df40115de6b30
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 9759b13077017674fa425fb5e68129be
+    m_Address: LOLImage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a876e4f34062e3479ddf3f61a543dc4, type: 2}
   m_SchemaSet:

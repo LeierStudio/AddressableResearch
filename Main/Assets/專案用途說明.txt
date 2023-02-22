@@ -1,0 +1,6 @@
+﻿此專案是用來測試 Addressable 用法、載入、釋放，
+可透過 TestScene 場景進行測試。
+
+有準備 InstantiateAsyncTester、InstantiateAsyncTester2、InstantiateAsyncTester3 ... 物件，
+方便釐清 Addressable 寫法。
+#. 有提供快捷鍵方便測試。

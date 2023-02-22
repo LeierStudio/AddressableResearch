@@ -16,11 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 411a291d00bac1a42a92ee9b9e3b1288
-  m_SerializeEntries:
-  - m_GUID: 9759b13077017674fa425fb5e68129be
-    m_Address: Assets/ArtAssets/Prefabs/LOLImage.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a876e4f34062e3479ddf3f61a543dc4, type: 2}
   m_SchemaSet:
