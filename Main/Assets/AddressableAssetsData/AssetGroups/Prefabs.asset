@@ -21,6 +21,26 @@ MonoBehaviour:
     m_Address: LOLImage
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: b828cb62e7efadb48a16c9b1fb0fd9f6
+    m_Address: BearImage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
+  - m_GUID: 459cd69d1c110d54eb0a896ff6dbda26
+    m_Address: BuffaloImage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
+  - m_GUID: 353d495270d678e4ea214d06f1d4f2c3
+    m_Address: ChickenImage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
+  - m_GUID: ebd8059856e56a941bea652b1ab24392
+    m_Address: ChickImage
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Character
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5a876e4f34062e3479ddf3f61a543dc4, type: 2}
   m_SchemaSet:
