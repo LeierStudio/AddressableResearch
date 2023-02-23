@@ -1,6 +1,17 @@
-===================== [注意事項] =====================
+﻿===================== [心得結論] =====================
 
-以下 Memory 統一是指使用 Addressables 後產生的 Memory。
+1. 每種載入都是一個 AsyncOperationHandle，記得用完後要釋放。(Addressables.Release(AsyncOperationHandle handle))
+注意事項：
+AsyncOperationHandle<GameObject> handle;
+handle = Addressables.LoadAssetAsync<GameObject>(item1);
+handle = Addressables.LoadAssetAsync<GameObject>(item2);
+Addressables.Release(handle)
+#. 這樣只會釋放到 item2 的 Memory。
+#. 應該要 Load 完後直接釋放。
+
+===================== [備註事項] =====================
+
+1. 以下 Memory 統一是指使用 Addressables 後產生的 Memory。
 
 ===================== [載入相關] =====================
 
@@ -10,10 +21,13 @@ Addressables.InstantiateAsync()
 把 Asset 異步載入到 Memory：
 Addressables.LoadAssetAsync()
 
+把該 Layer 全部 Asset 載入到 Memory：
+Addressables.LoadResourceLocationsAsync(string layerName)
+
 ===================== [釋放相關] =====================
 
 釋放此物件 Memory：
-ReleaseInstance(GameObject instance)
+Addressables.ReleaseInstance(GameObject instance)
 
 釋放異步操作處理器 Memory：
 Addressables.Release(AsyncOperationHandle handle)
