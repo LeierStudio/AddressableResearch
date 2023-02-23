@@ -8,7 +8,8 @@ handle = Addressables.LoadAssetAsync<GameObject>(prefab2);
 Addressables.Release(handle)
 #. 這樣只會釋放到 prefab2 的 Memory。
 
-2. 如果在手機上使用 Addressables.Release(AsyncOperationHandle handle) 會釋放該 Handle 的 Memory，會直接把素材釋放掉，載好的圖片被釋放掉了。
+2. 如果在手機上使用 Addressables.Release(AsyncOperationHandle handle) 會釋放該 Handle 的 Memory，
+會直接把素材釋放掉 (載好的圖片會被釋放掉)，需要在正確的時間點使用。
 範例：
 var handle = Addressables.LoadAssetAsync<GameObject>(prefab1);
 await handle.Task;
@@ -17,6 +18,9 @@ Addressables.Release(handle);
 #. 我載入圖片 Prefab 並實例化，
 #. 但馬上就被釋放了。(圖片載出來直接消失。)
 #. (UnityEditor 不會發生，但手機上會。)
+
+3. Addressables.LoadAssetAsync() 第一次載入需要等一下，載完後，之後要在載近乎就不用等，
+但如果有使用 Addressables.Release(AsyncOperationHandle handle) 則就需要重新載，要重新等一下。
 
 ===================== [備註事項] =====================
 
