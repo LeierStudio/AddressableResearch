@@ -17,7 +17,7 @@ MonoBehaviour:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -34,9 +34,9 @@ MonoBehaviour:
   m_MonoScriptBundleNaming: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 9fd1cbe195e584544b9344c564a8c964
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: 214a2a003b0ea2c44b7eaf6d856c0d4f
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
   m_overridePlayerVersion: 
@@ -44,6 +44,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 01bb37ec47df57a43b701532de25da0b, type: 2}
   - {fileID: 11400000, guid: 2d55938dba645404eb045ae1781b66a1, type: 2}
   - {fileID: 11400000, guid: 204bed7f568d57b42aeec27b3ea6c251, type: 2}
+  - {fileID: 11400000, guid: 0db01c547f7953f43b426364661b67cb, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -64,7 +65,7 @@ MonoBehaviour:
       - m_Id: 9fd1cbe195e584544b9344c564a8c964
         m_Value: ServerData/[BuildTarget]
       - m_Id: 214a2a003b0ea2c44b7eaf6d856c0d4f
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: TestCloud
       - m_Id: 22612feb9e664f84189c8fde0e6d901b
         m_Value: D:/05_TestGame/AddressableResearch/Main/Assets
     m_ProfileEntryNames:
